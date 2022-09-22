@@ -31,8 +31,8 @@ undefined + 1 = 1
 5 > 4 = true
 "ананас" > "яблоко" = false
 "2" > "12" = false
-undefined == null = true - Эти значения равны друг другу и не равны никаким другим значениям. Это специальное правило языка.
-undefined === null = false - Эти значения различны, так как различны их типы.
+undefined == null = true
+undefined === null = false 
 null == "\n0\n" = true
 null === +"\n0\n" = false
 
