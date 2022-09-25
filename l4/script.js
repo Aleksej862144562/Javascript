@@ -1,23 +1,49 @@
-let one = document.querySelector('.one');
-let two = document.querySelector('.two');
-
-console.log(one, two)
-
-one.addEventListener('click', function() {
-    setTimeout (function() {
-
-        two.remove();
-    } , 2000)
-
-}
-)
+// console.log( null || 2 || undefined ); // 2 
+// console.log( alert(1) || 2 || alert(3) ); //  2 - alert  возвращает undefined.
+// console.log( 1 && null && 2 ); // null - ложное значение.
+// console.log( alert(1) && alert(2) ); // undefined
+// console.log( null || 2 && 3 || 4 ); // "3, 4" Приоритет оператора && выше, чем ||. 
 
 
 
-function abc() {
-    return 2 + 3
+// //  Напишите условие if для проверки, что переменная age находится в диапазоне между  14 и 90 включительно. «Включительно» означает, что значение переменной age может быть равно 14 или 90.
+
+if (age >= 14 || age <= 90)
+
+// // Напишите условие if для проверки, что значение переменной age НЕ находится в диапазоне 14 и 90 включительно. Напишите два варианта: первый с использованием оператора НЕ !, второй – без этого оператора.
+
+if (!age >= 14 || !age <= 90)
+
+if (age > 14 || age < 90)
+
+// // Какие из перечисленных ниже alert выполнятся?
+
+if (-1 || 0) { alert( 'first' )}; // -1 - не выполниться
+if (-1 && 0) { alert( 'second' )}; // 0 - выполниться
+if (null || -1 && 1) { alert( 'third' )}; // 1 выполниться
+
+// // Проверка логина
+// // Напишите код, который будет спрашивать логин с помощью prompt.
+// // Если посетитель вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Я вас не знаю».
+
+let login = prompt("Кто там?", '');
+
+
+if (login === 'Админ') {
+
+    let pass = prompt('Пароль?', '');
+  
+    if (pass === 'Я главный') {
+        alert( 'Здравствуйте!' );
+      } else  if (pass === '' || pass === null) {
+        alert( 'Отменено' );
+      } else {
+        alert( 'Неверный пароль' );
+      }
     
-}
 
-let result = abc()
-console.log (result)
+} else if (userName === '' || userName === null) {
+    alert( 'Отменено' );
+  } else {
+    alert( "Я вас не знаю" );
+  }
