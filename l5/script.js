@@ -67,5 +67,5 @@ for (let i = 0; i < arr.length; i++){
 }
 }
 
-arr2.splice(3)
+arr2.splice(3, arr.length - 3)
 console.log(arr2)
