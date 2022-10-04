@@ -62,12 +62,13 @@
 // элементов в созданном массиве.
 
 let arr = [1, "2", "labas", 6, false, 0, 7, 8]
+let arr2 = []
     for (let i = 0; i < arr.length; i++) {
         function y(a) {
             console.log(typeof a)
            
-    }      
-} 
+    }
+}
 
    
 
