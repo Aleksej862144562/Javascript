@@ -50,7 +50,7 @@
 //   }
 
 // let x = y(3, 5);
-// console.log(x);
+// console.log(x); 
 
 
 // 1. Создать массив разных примитивов
@@ -61,14 +61,21 @@
 // 4. После выполнения цикла выведите в консоль количество положительных 
 // элементов в созданном массиве.
 
-let arr = [1, "2", "labas", 6, false, 0, 7, 8]
-let arr2 = []
-    for (let i = 0; i < arr.length; i++) {
-        function y(a) {
-            console.log(typeof a)
-           
+let arr = [1, "2", "labas", 6, false, 0, 7, 8];
+let arr2 = [];
+
+function y(a) {
+    console.log(typeof a)
+    if (a) {
+        arr2.push(a)
     }
 }
+    for (let i = 0; i < arr.length; i++) {
+        y(arr[i])
+    }
+
+    console.log(arr2);
+
 
    
 
